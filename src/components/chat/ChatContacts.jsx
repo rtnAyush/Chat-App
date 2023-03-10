@@ -1,6 +1,6 @@
 import "./ChatContact.css"
 import React from 'react'
-import ChatContact from "./chat/ChatContact"
+import ChatContact from "./ChatContact"
 
 const ChatContacts = () => {
   return (

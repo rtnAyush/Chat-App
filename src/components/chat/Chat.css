@@ -1,7 +1,7 @@
 .chat {
     flex: 2;
     background-color: white;
-    margin: 33px 30px 30px 15px;
+    margin-bottom:30px;
     border-radius: 10px;
     box-shadow: 2px 0 3px 1px rgba(0, 0, 0, 0.1),
         -2px -2px 3px 1px rgba(0, 0, 0, 0.1);
@@ -90,6 +90,7 @@ header>.time {
 .chat__input {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 10px 24px;
     border-top: 1px solid #EBEFF2;
@@ -103,6 +104,12 @@ header>.time {
 }
 
 .chat__input>div {
-    border-left: 1px solid #EBEFF2;
     margin: auto 10px;
+}
+
+.chat__input> label ,.chat__input > span{
+    margin: auto 10px;
+    cursor: pointer;
+    color: #858585;
+    font-size: 24px;
 }

@@ -8,7 +8,7 @@ const ChatHeader = () => {
                 <span>Ayush Kumar</span>
             </div>
             <div>
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                     more_vert
                 </span>
             </div>

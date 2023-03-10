@@ -1,0 +1,104 @@
+.contacts {
+    width: 100%;
+}
+
+.contact__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.contact__header>div>label {
+    color: #707683;
+}
+
+#company {
+    border: none;
+    background: none;
+    color: #109CF1;
+}
+
+/* each contact */
+.contact {
+    background-color: #fff;
+    height: calc(100vh - 158px);
+    border-radius: 5px;
+    box-shadow: 2px 0 3px 1px rgba(0, 0, 0, 0.05),
+        -2px -2px 3px 1px rgba(0, 0, 0, 0.05);
+}
+
+.each__contact {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 20px 20px;
+    gap: 20px;
+    border-bottom: .5px solid #EBEFF2;
+}
+
+.cell {
+    overflow-wrap: break-word;
+    color: #707683;
+}
+
+.checkbox__cell {
+    width: 2%;
+}
+
+.name__cell {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.name__cell>img {
+    width: 24px;
+    object-fit: contain;
+}
+
+.email__cell {
+    width: 24%;
+}
+
+.company__cell {
+    width: 14%;
+}
+
+.role__cell {
+    width: 14%;
+}
+
+.forecast__cell {
+    width: 7%;
+}
+
+.activity__cell {
+    width: 14%;
+}
+
+.head__color {
+    color: #334D6E !important;
+    font-weight: 500;
+}
+
+.icon {
+    color: #C2CFE0;
+    font-size: 20px;
+}
+
+.count__btn {
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+    width: 16px;
+    border-radius: 5px;
+}
+
+.selected{
+    font-weight: 500;
+    color: #334D6E;
+}

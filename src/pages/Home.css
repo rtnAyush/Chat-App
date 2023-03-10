@@ -15,5 +15,31 @@
 
 .right__down {
     display: flex;
+    gap: 30px;
+    margin: 30px;
+    margin-bottom: 0;
+}
 
+.btn {
+    width: 160px;
+    height: 42px;
+    color: white;
+    background-color: #109CF1;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #34AFF9;
+}
+
+.btn:active {
+    background-color: #098EDF;
+    transform: translateY(1px);
+}
+
+img { 
+    object-fit: contain;
+    border-radius: 50%;
 }

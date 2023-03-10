@@ -1,15 +1,29 @@
 .chat__contacts {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 94px);
     flex: 1;
     background-color: white;
-    margin: 33px 15px 0 33px;
     border-radius: 10px;
     overflow: auto;
     box-shadow: 2px 0 3px 1px rgba(0, 0, 0, 0.1),
         -2px -2px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.chat__contacts .contact {
+/* scroll bar */
+.chat__contacts::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Handle */
+.chat__contacts::-webkit-scrollbar-thumb {
+    background: #109CF1;
+    border-radius: 10px;
+}
+
+.chat__contacts::-webkit-scrollbar-track {
+    margin-bottom: 475px;
+}
+
+.chat__contact {
     margin-top: 15px;
     padding: 15px;
     display: flex;
@@ -17,10 +31,8 @@
     border-bottom: 0.5px solid #EBEFF2;
 }
 
-.contact>img {
+.chat__contact>img {
     width: 28px;
-    object-fit: contain;
-
 }
 
 .contact__info {
@@ -54,19 +66,4 @@
     color: white;
     width: 16px;
     border-radius: 5px;
-}
-
-/* scroll bar */
-::-webkit-scrollbar {
-    width: 3px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #109CF1;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    margin-bottom: 475px;
 }

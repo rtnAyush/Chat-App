@@ -2,7 +2,7 @@ import React from 'react'
 
 const ChatContact = () => {
     return (
-        <div className='contact'>
+        <div className='chat__contact'>
             <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="" />
             <div className='contact__info'>
                 <div>

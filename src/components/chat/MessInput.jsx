@@ -1,17 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
+import InputEmoji from "react-input-emoji";
 
 const MessInput = () => {
+    const [text, setText] = useState("");
+
+    function handleOnEnter(text) {
+        console.log("enter", text);
+    }
     return (
         <div className="chat__input">
-            <input type="text" name="" id="" placeholder='Type a message' />
-            <div>
-                <span class="material-symbols-outlined">
+            <InputEmoji
+                onChange={setText}
+                cleanOnEnter
+                onEnter={handleOnEnter}
+                placeholder="Type a message"
+                borderColor={"white"}
+                fontSize={"13"}
+            />
+            <input type="file" id="file" style={{ display: "none" }} />
+            <label htmlFor="file">
+                <span className="material-symbols-outlined">
                     attach_file
                 </span>
-                <span class="material-symbols-outlined">
-                    sentiment_satisfied
-                </span>
-            </div>
+            </label>
         </div>
     )
 }

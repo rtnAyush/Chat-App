@@ -4,7 +4,7 @@ import "./Nav.css"
 
 const Nav = () => {
   let location = useLocation();
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState("");
 
   return (
     <div className='nav'>
@@ -18,7 +18,7 @@ const Nav = () => {
 
       {/* profile info part */}
       <div className="nav__profile_info">
-        <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/logo192.jpg"} alt="" />
         <div className={toggle && "toggle__active" }>
           <header>Sierra Ferguson</header>
           <section>sierraferguson@gmail.com</section>
@@ -89,7 +89,7 @@ const Nav = () => {
       </div>
 
       {/* nav__toggler */}
-      <div className={`nav__toggler ${toggle && "active"}`} onClick={() => { toggle ? setToggle(false) : setToggle(true); }}>
+      <div className={`nav__toggler ${toggle && "active"}`} onClick={() => { toggle ? setToggle("") : setToggle("true"); }}>
         <span className="icon material-symbols-outlined">
           toggle_off
         </span>

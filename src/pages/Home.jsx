@@ -2,9 +2,10 @@ import React from 'react'
 import "./Home.css"
 import Nav from '../components/Nav'
 import SearchBar from '../components/SearchBar'
-import Chat from '../components/Chat'
-import ChatContacts from '../components/ChatContacts'
+import Chat from '../components/chat/Chat'
+import ChatContacts from '../components/chat/ChatContacts'
 import { Route, Routes } from 'react-router-dom'
+import Contacts from '../components/contact/Contacts'
 
 
 const Home = () => {
@@ -21,15 +22,20 @@ const Home = () => {
                     <div className="right__down">
 
                         <Routes>
-                            <Route path='/' element={
+                            <Route path='*' element={
                                 <>
-                                    <h2>Nothing to show</h2>
+                                    <h2>Page under process</h2>
                                 </>
                             } />
-                            <Route path='/chat/' element={
+                            <Route path='/chat' element={
                                 <>
                                     <ChatContacts />
                                     <Chat />
+                                </>
+                            } />
+                            <Route path='/contact' element={
+                                <>
+                                    <Contacts />
                                 </>
                             } />
                         </Routes>

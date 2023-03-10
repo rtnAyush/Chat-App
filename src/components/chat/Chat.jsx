@@ -1,8 +1,8 @@
 import "./Chat.css"
 import React from 'react'
-import ChatHeader from "./chat/ChatHeader"
-import Messages from "./chat/Messages"
-import MessInput from "./chat/MessInput"
+import ChatHeader from "./ChatHeader"
+import Messages from "./Messages"
+import MessInput from "./MessInput"
 
 
 const Chat = () => {
