@@ -1,0 +1,19 @@
+.home {
+    display: flex;
+    background-color: #E5E5E5;
+}
+
+.left__side {
+    display: flex;
+}
+
+.right__side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.right__down {
+    display: flex;
+
+}

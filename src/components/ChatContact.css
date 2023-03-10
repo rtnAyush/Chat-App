@@ -1,0 +1,72 @@
+.chat__contacts {
+    height: calc(100vh - 100px);
+    flex: 1;
+    background-color: white;
+    margin: 33px 15px 0 33px;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 2px 0 3px 1px rgba(0, 0, 0, 0.1),
+        -2px -2px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.chat__contacts .contact {
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    border-bottom: 0.5px solid #EBEFF2;
+}
+
+.contact>img {
+    width: 28px;
+    object-fit: contain;
+
+}
+
+.contact__info {
+    flex: 1;
+}
+
+.contact__info>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.contact__info>div>p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #109CF1;
+}
+
+.contact__info>div>span {
+    color: #90A0B7;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.contact__info .mess__count {
+    text-align: center;
+    background-color: #109CF1;
+    color: white;
+    width: 16px;
+    border-radius: 5px;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #109CF1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    margin-bottom: 475px;
+}

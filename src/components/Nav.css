@@ -1,0 +1,103 @@
+.nav {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 3px 0 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.hr {
+    border-bottom: 1px solid #EBEFF2;
+}
+
+.nav__header {
+    margin: 20px 0 20px 15px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #109CF1;
+}
+
+/* profile info part */
+
+.nav__profile_info {
+    display: flex;
+    gap: 10px;
+    margin: 20px 10px;
+}
+
+.nav__profile_info>div {
+    font-size: 14px;
+}
+
+.nav__profile_info>div>header {
+    font-weight: 500;
+}
+
+.nav__profile_info>div>section {
+    font-weight: 500;
+    color: #707683;
+    font-size: 11px;
+}
+
+.nav__profile_info>img {
+    width: 46px;
+    object-fit: contain;
+}
+
+/* Option part */
+
+.nav__options {
+    margin: 10px 0 10px 15px;
+}
+
+.nav__options>a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.nav__options .icon {
+    color: #C2CFE0;
+    font-size: 20px;
+}
+
+.nav__options>a>p {
+    font-size: 13px;
+    color: #334D6E;
+    font-weight: 500;
+}
+
+.active>span,
+.active>p {
+    color: #109CF1 !important;
+}
+
+/* nav__toggler */
+.nav__toggler {
+    margin: 10px 0 10px 15px;
+    position: absolute;
+    bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav__toggler>span {
+    color: #C2CFE0;
+    font-size: 20px;
+}
+
+.nav__toggler>p {
+    color: #90A0B7;
+    font-size: 11px;
+}
+
+.toggle__active {
+    display: none;
+}

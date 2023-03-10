@@ -1,0 +1,37 @@
+.search__bar {
+    width: 100%;
+    background-color: white;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.search__bar_input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 30px;
+}
+
+.search__bar_input .icon {
+    font-size: 20px;
+    color: #C2CFE0;
+}
+
+.search__bar_input>input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: #90A0B7
+}
+
+.search__bar_notification {
+    font-size: 24px;
+    color: #C2CFE0;
+    padding: 20px;
+}
