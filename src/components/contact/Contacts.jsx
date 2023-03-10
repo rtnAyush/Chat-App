@@ -5,7 +5,7 @@ import ContactHeader from './ContactHeader'
 
 const Contacts = () => {
     const [clickCount, setClickCount] = useState(0);
-    console.log(clickCount);
+    
     return (
         <div className='contacts'>
             <ContactHeader />

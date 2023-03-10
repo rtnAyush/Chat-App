@@ -4,7 +4,7 @@ import InputEmoji from "react-input-emoji";
 const MessInput = () => {
     const [text, setText] = useState("");
 
-    function handleOnEnter(text) {
+    function handleOnEnter() {
         console.log("enter", text);
     }
     return (
