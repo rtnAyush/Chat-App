@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import "./Contacts.css"
 import Contact from './Contact'
 import ContactHeader from './ContactHeader'
+import { useStateValue } from '../../context/StateProvider'
 
 const Contacts = () => {
     const [clickCount, setClickCount] = useState(0);
-    
+    const [{ user }] = useStateValue();
+
+    console.log(user.contacts);
     return (
         <div className='contacts'>
             <ContactHeader />
@@ -35,42 +38,23 @@ const Contacts = () => {
                             </>
                     }
                 </div>
-                <Contact
-                    name={"Ayush Kumar"}
-                    email={"ayushkumar.dev25@gmail.com"}
-                    company={"Hatchbuck"}
-                    role={"Manager"}
-                    forecast={"50"}
-                    activity={"5 Minutes"}
-                    setClickCount={setClickCount}
-                />
-                <Contact
-                    name={"Ayush Kumar"}
-                    email={"ayushkumar.dev25@gmail.com"}
-                    company={"Hatchbuck"}
-                    role={"Manager"}
-                    forecast={"50"}
-                    activity={"5 Minutes"}
-                    setClickCount={setClickCount}
-                />
-                <Contact
-                    name={"Ayush Kumar"}
-                    email={"ayushkumar.dev25@gmail.com"}
-                    company={"Hatchbuck"}
-                    role={"Manager"}
-                    forecast={"50"}
-                    activity={"5 Minutes"}
-                    setClickCount={setClickCount}
-                />
-                <Contact
-                    name={"Ayush Kumar"}
-                    email={"ayushkumar.dev25@gmail.com"}
-                    company={"Hatchbuck"}
-                    role={"Manager"}
-                    forecast={"50"}
-                    activity={"5 Minutes"}
-                    setClickCount={setClickCount}
-                />
+
+                {
+                    user.contacts.map((contact) => {
+                        return (
+                            <Contact
+                                name={contact.name}
+                                email={contact.email}
+                                company={contact.company}
+                                role={contact.role}
+                                forecast={contact.forecast}
+                                activity={contact.activity}
+                                setClickCount={setClickCount}
+                            />
+                        )
+                    })
+                }
+
             </div>
         </div>
     )

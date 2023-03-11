@@ -1,0 +1,12 @@
+.default__page {
+    width: 100%;
+    background-color: #fff;
+    height: calc(100vh - 158px);
+    border-radius: 5px;
+    box-shadow: 2px 0 3px 1px rgba(0, 0, 0, 0.05),
+        -2px -2px 3px 1px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

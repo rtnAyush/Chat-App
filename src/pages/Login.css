@@ -1,0 +1,73 @@
+.login {
+    width: 100%;
+    background-color: #fff;
+    height: calc(100vh - 158px);
+    border-radius: 5px;
+    box-shadow: 2px 0 3px 1px rgba(0, 0, 0, 0.05),
+        -2px -2px 3px 1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__logo {
+    margin: 20px auto;
+    width: 100px;
+    object-fit: contain;
+}
+
+.login__container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid lightgrey;
+}
+
+.login__container>h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.login__container>form>h6 {
+    margin-bottom: 5px;
+}
+
+.login__container>form>input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+
+.login__container>form>button {
+    width: 98%;
+}
+
+.login__container>p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.login__container>form>label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__container>form>label>span {
+    cursor: pointer;
+    font-size: 100px;
+}
+
+.login__container>form>label>img {
+    cursor: pointer;
+    width: 100px;
+    border: 1px solid #beb8b8;
+}
+
+input[type="file"] {
+    display: none;
+}

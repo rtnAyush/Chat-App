@@ -1,3 +1,15 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .home {
     display: flex;
     background-color: #E5E5E5;
@@ -39,7 +51,7 @@
     transform: translateY(1px);
 }
 
-img { 
+img {
     object-fit: contain;
     border-radius: 50%;
 }

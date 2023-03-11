@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 
 const Contact = ({ name, email, company, role, forecast, activity, setClickCount }) => {
-    const ref = useRef()
+    const ref = useRef();
 
     const handleChecked = () => {
         if (ref.current.checked) {
